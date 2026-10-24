@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets - never commit real values
+.env
+.env.local
+
+# Pulumi local backend state (project uses the Pulumi Cloud backend, not local state files)
+.pulumi/
+
+# Go build artifacts
+deploy/pulumi/livekit-line-partner-pulumi
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
