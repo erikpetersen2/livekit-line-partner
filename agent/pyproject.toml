@@ -1,0 +1,41 @@
+[project]
+name = "line-partner-agent"
+version = "0.1.0"
+description = "LiveKit voice agent that runs lines with actors (Line Partner)"
+requires-python = ">=3.10, <3.15"
+
+dependencies = [
+    "livekit-agents[openai]~=1.8",
+    "livekit-plugins-silero",
+    "rapidfuzz",
+    "python-dotenv",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+]
+
+[tool.uv]
+# yarl published a release with only a cp310 wheel and no sdist at one point, which breaks
+# installs on Python 3.11+. Matches the constraint in the official agent-starter-python
+# template as of 2026-10; safe to remove once confirmed no longer needed.
+constraint-dependencies = ["yarl<1.24"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "B", "A", "C4", "UP", "SIM", "RUF"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
