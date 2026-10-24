@@ -78,4 +78,25 @@ session never attempts the Cloud call at all.
 default - worth explicitly pinning every `TurnHandlingOptions`/session option rather than trusting defaults,
 and watching the startup logs closely the first time any new feature is touched.
 
+## LLM called the wrong tool on a flubbed line instead of staying silent (2026-10-23)
+**Symptom:** during a live run-through playing Jack, after a correct line was accepted and the agent moved
+on, speaking the next line back got the *previous* NPC line repeated instead of advancing - as if "again"
+had been triggered, even though nothing was said that should have meant that.
+**Diagnosis:** the architecture is deliberately two-tier: `on_user_turn_completed` checks every actor turn
+against the deterministic state machine first, and only falls through to the LLM when the line *doesn't*
+match (so the LLM can classify free-form commands like "line?"/"again"/"from the top"/"skip to scene N").
+With no logging in place yet, there was no way to see what actually happened - but the likely cause is STT
+noise or a near-miss causing the fuzzy matcher to score just under threshold, after which the LLM received
+an ordinary, non-command utterance and guessed it meant "repeat_last_line" anyway. The system prompt told
+the LLM *when* to call each tool but never told it to do nothing when none of the four commands clearly
+applied - so on an ambiguous turn, it called a tool instead of just giving the one-line nudge.
+**Fix:** added an explicit instruction - "only call a tool when you're confident the actor meant one of the
+four commands; a flubbed attempt at their actual line is NOT a request to repeat/restart/skip, so call
+nothing and just give the nudge" - plus `logger.info` calls on every tool invocation and on every line-match
+attempt (spoken text, expected text, fuzzy score, matched boolean) so a repeat of this is diagnosable from
+the logs instead of guesswork.
+**Takeaway:** an LLM given tools for a deterministic pipeline needs to be told not to call them just as
+explicitly as it's told when to - "classify or do nothing" has to be stated, not assumed - and any
+tool-calling agent needs call-level logging from day one, not added after the first confusing bug report.
+
 (further entries start once Phase 1 build/run work continues)

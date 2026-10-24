@@ -1,0 +1,59 @@
+TITLE: The Importance of Being Earnest - Act I (excerpt)
+SOURCE: Oscar Wilde, 1895 - public domain (Project Gutenberg EBook #844, gutenberg.org/ebooks/844)
+NOTE: Scene divisions below are our own segmentation for demo/testing purposes, not the
+NOTE: play's own structure (a three-act play has no numbered scenes within an act). Stage
+NOTE: directions have been removed since this text is meant to be spoken by TTS, not read.
+
+SCENE: Scene 1 - Algernon and Lane
+
+ALGERNON: Did you hear what I was playing, Lane?
+LANE: I didn't think it polite to listen, sir.
+ALGERNON: I'm sorry for that, for your sake. I don't play accurately, any one can play accurately, but I play with wonderful expression. As far as the piano is concerned, sentiment is my forte. I keep science for Life.
+LANE: Yes, sir.
+ALGERNON: And, speaking of the science of Life, have you got the cucumber sandwiches cut for Lady Bracknell?
+LANE: Yes, sir.
+ALGERNON: I see from your book that on Thursday night, when Lord Shoreman and Mr. Worthing were dining with me, eight bottles of champagne are entered as having been consumed.
+LANE: Yes, sir; eight bottles and a pint.
+ALGERNON: Why is it that at a bachelor's establishment the servants invariably drink the champagne? I ask merely for information.
+LANE: I attribute it to the superior quality of the wine, sir. I have often observed that in married households the champagne is rarely of a first-rate brand.
+ALGERNON: Good heavens! Is marriage so demoralising as that?
+LANE: I believe it is a very pleasant state, sir. I have had very little experience of it myself up to the present. I have only been married once. That was in consequence of a misunderstanding between myself and a young person.
+ALGERNON: I don't know that I am much interested in your family life, Lane.
+LANE: No, sir; it is not a very interesting subject. I never think of it myself.
+ALGERNON: Very natural, I am sure. That will do, Lane, thank you.
+LANE: Thank you, sir.
+
+SCENE: Scene 2 - Algernon and Jack
+
+ALGERNON: How are you, my dear Ernest? What brings you up to town?
+JACK: Oh, pleasure, pleasure! What else should bring one anywhere? Eating as usual, I see, Algy!
+ALGERNON: I believe it is customary in good society to take some slight refreshment at five o'clock. Where have you been since last Thursday?
+JACK: In the country.
+ALGERNON: What on earth do you do there?
+JACK: When one is in town one amuses oneself. When one is in the country one amuses other people. It is excessively boring.
+ALGERNON: And who are the people you amuse?
+JACK: Oh, neighbours, neighbours.
+ALGERNON: Got nice neighbours in your part of Shropshire?
+JACK: Perfectly horrid! Never speak to one of them.
+ALGERNON: How immensely you must amuse them! By the way, Shropshire is your county, is it not?
+JACK: Eh? Shropshire? Yes, of course. Hallo! Why all these cups? Why cucumber sandwiches? Why such reckless extravagance in one so young? Who is coming to tea?
+ALGERNON: Oh! Merely Aunt Augusta and Gwendolen.
+JACK: How perfectly delightful!
+ALGERNON: Yes, that is all very well; but I am afraid Aunt Augusta won't quite approve of your being here.
+JACK: May I ask why?
+ALGERNON: My dear fellow, the way you flirt with Gwendolen is perfectly disgraceful. It is almost as bad as the way Gwendolen flirts with you.
+JACK: I am in love with Gwendolen. I have come up to town expressly to propose to her.
+ALGERNON: I thought you had come up for pleasure? I call that business.
+JACK: How utterly unromantic you are!
+ALGERNON: I really don't see anything romantic in proposing. It is very romantic to be in love. But there is nothing romantic about a definite proposal. Why, one may be accepted. One usually is, I believe. Then the excitement is all over. The very essence of romance is uncertainty. If ever I get married, I'll certainly try to forget the fact.
+JACK: I have no doubt about that, dear Algy. The Divorce Court was specially invented for people whose memories are so curiously constituted.
+ALGERNON: Oh, there is no use speculating on that subject. Divorces are made in Heaven. Please don't touch the cucumber sandwiches. They are ordered specially for Aunt Augusta.
+JACK: Well, you have been eating them all the time.
+ALGERNON: That is quite a different matter. She is my aunt. Have some bread and butter. The bread and butter is for Gwendolen. Gwendolen is devoted to bread and butter.
+JACK: And very good bread and butter it is too.
+ALGERNON: Well, my dear fellow, you need not eat as if you were going to eat it all. You behave as if you were married to her already. You are not married to her already, and I don't think you ever will be.
+JACK: Why on earth do you say that?
+ALGERNON: Well, in the first place girls never marry the men they flirt with. Girls don't think it right.
+JACK: Oh, that is nonsense!
+ALGERNON: It isn't. It is a great truth. It accounts for the extraordinary number of bachelors that one sees all over the place. In the second place, I don't give my consent.
+JACK: Your consent!
